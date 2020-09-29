@@ -77,6 +77,8 @@ kind: Deployment
 metadata:
   name: user-db
   namespace: staging
+  labels:
+    name: user-db
 spec:
   replicas: 1
   strategy:
@@ -135,6 +137,8 @@ kind: Deployment
 metadata:
   name: user-db
   namespace: production
+  labels:
+    name: user-db
 spec:
   replicas: 1
   strategy:
