@@ -19,6 +19,9 @@ metadata:
   namespace: dev
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      service: carts-db
   strategy:
     type: Recreate
   template:
@@ -74,6 +77,9 @@ metadata:
   namespace: staging
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      service: carts-db
   strategy:
     type: Recreate
   template:
@@ -129,6 +135,9 @@ metadata:
   namespace: production
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      service: carts-db
   strategy:
     type: Recreate
   template:
