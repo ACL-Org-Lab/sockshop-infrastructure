@@ -17,10 +17,15 @@ kind: Deployment
 metadata:
   name: user-db
   namespace: dev
+  labels:
+    name: user-db
 spec:
   replicas: 1
   strategy:
     type: Recreate
+  selector:
+    matchLabels:
+      name: user-db
   template:
     metadata:
       labels:
@@ -76,6 +81,9 @@ spec:
   replicas: 1
   strategy:
     type: Recreate
+  selector:
+    matchLabels:
+      name: user-db
   template:
     metadata:
       labels:
@@ -131,6 +139,9 @@ spec:
   replicas: 1
   strategy:
     type: Recreate
+  selector:
+    matchLabels:
+      name: user-db
   template:
     metadata:
       labels:
