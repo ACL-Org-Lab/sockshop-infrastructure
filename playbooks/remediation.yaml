@@ -1,6 +1,7 @@
 ---
 - name: autoremediaton playbook
   hosts: localhost
+  gather_facts: no
   vars:
     relative_time: "day"
 

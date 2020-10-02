@@ -1,5 +1,6 @@
 ---
 - hosts: localhost
+  gather_facts: no
   vars:
     dt_app: "{{ dt_application }}"
     dt_env: "{{ dt_environment }}"
