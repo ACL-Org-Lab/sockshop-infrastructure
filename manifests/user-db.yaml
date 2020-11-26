@@ -10,7 +10,7 @@ spec:
   resources:
     requests:
       storage: 100Mi
-  storageClassName: gold
+  storageClassName: gp2
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -70,7 +70,7 @@ spec:
   resources:
     requests:
       storage: 100Mi
-  storageClassName: gold
+  storageClassName: gp2
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -130,7 +130,7 @@ spec:
   resources:
     requests:
       storage: 100Mi
-  storageClassName: gold
+  storageClassName: gp2
 ---
 apiVersion: apps/v1
 kind: Deployment
